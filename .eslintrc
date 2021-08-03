@@ -9,8 +9,8 @@
     "prettier"
   ],
   "rules": {
-    "no-loops/no-loops": 2, // 2 means throw an ERROR
-    "no-console": 1, // Means warning
-    "prettier/prettier": 2 // Means error
+    "no-loops/no-loops": 2,
+    "no-console": 1,
+    "prettier/prettier": 2
   }
 }
