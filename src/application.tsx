@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import logging from './config/logging';
 import routes from './config/routes';
-import { Header } from './components/Header';
+import { Navbar } from './components/Navbar';
 const Application: React.FunctionComponent<unknown> = (props) => {
   useEffect(() => {
     logging.info('Loading application.');
@@ -17,7 +17,7 @@ const Application: React.FunctionComponent<unknown> = (props) => {
     <div>
       <BrowserRouter>
         <div>
-          <Header />
+          <Navbar />
           <Switch>
             {routes.map((route, index) => {
               return (
