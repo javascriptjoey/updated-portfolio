@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
 * {
-  background-color: black;
-  color: azure;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Montserrat';
+}
+.color {
+  color: white;
 }
