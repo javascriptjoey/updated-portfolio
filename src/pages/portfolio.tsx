@@ -7,7 +7,12 @@ const PortfolioPage: React.FunctionComponent<IPage> = (props) => {
     logging.info(`Loading ${props.name}`);
   }, [props.name]);
 
-  return <p>This is the Portfolio page!</p>;
+  return (
+    <div>
+      <h1>Portfolio</h1>
+      <p>Websites and Projects will be listed on this page</p>
+    </div>
+  );
 };
 
 export default PortfolioPage;

@@ -7,7 +7,12 @@ const BlogPage: React.FunctionComponent<IPage> = (props) => {
     logging.info(`Loading ${props.name}`);
   }, [props.name]);
 
-  return <p>BLoG works</p>;
+  return (
+    <div>
+      <h1>Blog Page</h1>
+      <p>Welcome to my blog</p>
+    </div>
+  );
 };
 
 export default BlogPage;

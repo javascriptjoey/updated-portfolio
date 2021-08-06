@@ -8,7 +8,10 @@ const AppsPage: React.FunctionComponent<IPage> = (props) => {
   }, [props.name]);
 
   return (
-    <p>This is the Apps page! Oh shit joey you learn fastr then you think</p>
+    <div>
+      <h1>iPhone Applications</h1>
+      <p> Native iOS applications go on this page</p>
+    </div>
   );
 };
 

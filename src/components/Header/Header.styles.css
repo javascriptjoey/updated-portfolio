@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background: #8e24aa;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo {
+  margin-left: 40px;
+}
+
+.home {
+  margin-right: 20px;
+}
+
+.about {
+  margin-right: 20px;
+}
+
+.apps {
+  margin-right: 20px;
+}
+
+.portfolio {
+  margin-right: 20px;
+}
+
+.contact {
+  margin-right: 20px;
+}
+
+.blog {
+  margin-right: 20px;
+}
+
+.resume {
+  margin-right: 40px;
+}
+
+.linkColor {
+  color: green;
+}
+/* This is fun its not how fast you finish the race you got this Joey!*/

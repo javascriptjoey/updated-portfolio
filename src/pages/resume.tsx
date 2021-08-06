@@ -7,7 +7,12 @@ const ResumePage: React.FunctionComponent<IPage> = (props) => {
     logging.info(`Loading ${props.name}`);
   }, [props.name]);
 
-  return <p>This is my Really cool Resume downLoad page!</p>;
+  return (
+    <div>
+      <h1>Resume</h1>
+      <p>Down load resume option will be here</p>
+    </div>
+  );
 };
 
 export default ResumePage;
