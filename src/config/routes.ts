@@ -1,11 +1,11 @@
 import IRoute from '../interfaces/route';
 import AboutPage from '../pages/about/about';
-import HomePage from '../pages/home';
-import AppsPage from '../pages/apps';
-import PortfolioPage from '../pages/portfolio';
-import ContactPage from '../pages/contact';
-import BlogPage from '../pages/blog';
-import ResumePage from '../pages/resume';
+import HomePage from '../pages/home/home';
+import AppsPage from '../pages/apps/apps';
+import PortfolioPage from '../pages/portfolio/portfolio';
+import ContactPage from '../pages/contact/contact';
+import BlogPage from '../pages/blog/blog';
+import ResumePage from '../pages/resume/resume';
 
 const routes: IRoute[] = [
   {

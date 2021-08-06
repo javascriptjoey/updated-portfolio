@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import IPage from '../interfaces/page';
-import logging from '../config/logging';
+import IPage from '../../interfaces/page';
+import logging from '../../config/logging';
 import { gsap } from 'gsap';
 
 const HomePage: React.FunctionComponent<IPage> = (props) => {
