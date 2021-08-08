@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyledLink } from './NavbarStyled';
 import './Navbar.styles.css';
+import { Twirl as Hamburger } from 'hamburger-react';
+
 const Navbar = (): JSX.Element => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <div>
       <nav className="navbar">
         <h3 className="logo">Joey Essak</h3>
         <ul
-          className={isMobile ? 'nav-links-mobile' : 'nav-links'}
+          className={
+            isMobile ? 'nav-links-mobile' : ' nav-links-mobile-close nav-links'
+          }
           onClick={() => setIsMobile(false)}
         >
           <StyledLink className="home" to="/">
@@ -33,16 +39,9 @@ const Navbar = (): JSX.Element => {
             <li>Contact</li>
           </StyledLink>
         </ul>
-        <button
-          className="mobile-menu-icon"
-          onClick={() => setIsMobile(!isMobile)}
-        >
-          {isMobile ? (
-            <i className="fas fa-times"></i>
-          ) : (
-            <i className="fas fa-bars"></i>
-          )}
-        </button>
+        <div className="mobile-menu-icon">
+          <Hamburger size={20} onToggle={(toggled) => setIsMobile(!isMobile)} />
+        </div>
       </nav>
     </div>
   );
