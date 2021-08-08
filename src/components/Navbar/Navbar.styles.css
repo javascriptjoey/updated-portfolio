@@ -9,6 +9,7 @@
   justify-content: flex-end;
   align-items: center;
   height: 55px;
+  width: 100vw;
   animation: change-background 4s ease-in infinite alternate;
   color: white;
   border-bottom: 3px solid orange;
@@ -29,7 +30,7 @@
 .logo {
   font-size: 20px;
   align-items: center;
-  text-shadow: 0px 1px 2px black;
+  text-shadow: -1.5px 1.5px 2px black;
 }
 
 .nav-links {
@@ -38,7 +39,6 @@
   flex-basis: auto;
   list-style: none;
   width: 85%;
-  text-shadow: 0px 1px 2px black;
 }
 
 .nav-links a {
@@ -106,8 +106,13 @@ a::after {
 
 @media (max-width: 1033px) {
   .logo {
-    display: none;
+    text-shadow: -1.5px 1.5px 2px black;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 35px;
   }
+
   .nav-links {
     display: none;
   }
@@ -115,6 +120,7 @@ a::after {
 
 @media (max-width: 780px) {
   .logo {
+    text-shadow: -1.5px 1.5px 2px black;
     display: flex;
     position: absolute;
     align-items: center;
@@ -126,18 +132,17 @@ a::after {
   }
 
   .nav-links-mobile {
-    text-shadow: 0px 1px 2px black;
+    text-shadow: -1.5px 1.5px 2px black;
     position: absolute;
     display: block;
     list-style: none;
-    padding-top: 10%;
+    padding-top: 100px;
     left: 0;
     top: 55px;
     transition: all 0.5s ease-out;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 131, 143);
-    animation: slide-in-from-right 0.5s ease-in forwards;
+    background-image: linear-gradient(#64ffda, #006064);
   }
 
   .nav-links-mobile-close {
@@ -146,33 +151,16 @@ a::after {
     position: absolute;
     display: block;
     list-style: none;
-    padding-top: 10%;
+
+    padding-top: 50%;
     left: 0;
     top: 55px;
     transition: all 0.5s ease-out;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 131, 143);
-    animation: slide-out-right 0.5s ease-in forwards;
+    background-image: linear-gradient(#64ffda, #006064);
   }
 
-  @keyframes slide-in-from-right {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
-
-  @keyframes slide-out-right {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
-  }
   .home,
   .about,
   .apps,
@@ -184,7 +172,7 @@ a::after {
     text-align: center;
     padding: 32;
     margin: 100%;
-    transition: all 0.5s ease;
+    transition: all 0.1s ease;
   }
 
   .contact {

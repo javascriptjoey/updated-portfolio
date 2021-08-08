@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyledLink } from './NavbarStyled';
 import './Navbar.styles.css';
-import { Twirl as Hamburger } from 'hamburger-react';
+import { Squash as Hamburger } from 'hamburger-react';
 
 const Navbar = (): JSX.Element => {
   const [isMobile, setIsMobile] = useState(false);
