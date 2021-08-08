@@ -1,0 +1,30 @@
+.ham {
+  cursor: pointer;
+}
+
+.hamburger:before,
+.hamburger:after,
+.line {
+  content: '';
+  display: block;
+  background-color: white;
+  margin: 0.5rem;
+  width: 40px;
+  height: 4px;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.hamburger2:hover {
+  &:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+
+  &:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+
+  .line {
+    transform: scale(0);
+  }
+}

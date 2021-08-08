@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 export const StyledLink = styled(Link)`
   color: white;
-  &:hover {
+
+  transition: color 0.5s ease;
+  :hover {
     color: orange;
   }
 `;

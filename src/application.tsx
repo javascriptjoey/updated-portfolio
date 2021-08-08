@@ -8,6 +8,7 @@ import {
 import logging from './config/logging';
 import routes from './config/routes';
 import { Navbar } from './components/Navbar';
+
 const Application: React.FunctionComponent<unknown> = (props) => {
   useEffect(() => {
     logging.info('Loading application.');
