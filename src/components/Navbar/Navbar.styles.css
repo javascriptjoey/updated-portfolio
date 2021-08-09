@@ -103,11 +103,23 @@ a::after {
 .mobile-menu-icon {
   display: none;
 }
-
+@media (max-width: 1017px) {
+  .nav-links-mobile {
+    display: none;
+  }
+}
 @media (max-width: 1033px) {
+  .stack {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .paragraph {
+    opacity: 0;
+  }
+
   .logo {
     text-shadow: -1.5px 1.5px 2px black;
-    display: flex;
+    display: block;
     position: absolute;
     align-items: center;
     left: 35px;
@@ -119,9 +131,17 @@ a::after {
 }
 
 @media (max-width: 780px) {
+  .stack {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .paragraph {
+    opacity: 0;
+  }
+
   .logo {
     text-shadow: -1.5px 1.5px 2px black;
-    display: flex;
+    display: block;
     position: absolute;
     align-items: center;
     left: 35px;
