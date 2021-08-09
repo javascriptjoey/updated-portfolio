@@ -18,9 +18,9 @@ const Application: React.FunctionComponent<unknown> = (props) => {
     <div>
       <BrowserRouter>
         <div>
-          <IphoneNavbar />
+          <Navbar />
           <Switch>
-            {routes.map((route, index) => {
+              {routes.map((route, index) => {
               return (
                 <Route
                   key={index}
