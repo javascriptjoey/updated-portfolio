@@ -1,0 +1,10 @@
+.wrapper {
+  border-style: solid;
+  border-color: lawngreen;
+  height: 100vh;
+  overflow: auto;
+}
+
+.home-textElents {
+  padding-left: 100px;
+}

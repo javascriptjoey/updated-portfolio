@@ -9,18 +9,20 @@ import logging from './config/logging';
 import routes from './config/routes';
 import { Navbar } from './components/Navbar';
 import { IphoneNavbar } from './components/IphoneNavbar';
+import './application.css';
+
 const Application: React.FunctionComponent<unknown> = (props) => {
   useEffect(() => {
     logging.info('Loading application.');
   }, []);
 
   return (
-    <div>
+    <div className="wrap">
       <BrowserRouter>
         <div>
           <Navbar />
           <Switch>
-              {routes.map((route, index) => {
+            {routes.map((route, index) => {
               return (
                 <Route
                   key={index}

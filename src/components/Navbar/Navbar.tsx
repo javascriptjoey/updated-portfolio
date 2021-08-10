@@ -10,10 +10,8 @@ const Navbar = (): JSX.Element => {
   return (
     <div>
       <nav className="navbar">
-        <span className="stack">
-          <h3 className="logo">Joey Essak</h3>
-          <p className="paragraph">Software Engineer</p>
-        </span>
+        <h3 className="logo">Joey Essak</h3>
+
         <ul
           className={
             isMobile ? 'nav-links-mobile' : ' nav-links-mobile-close nav-links'

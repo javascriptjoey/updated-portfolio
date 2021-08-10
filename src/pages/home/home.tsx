@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import IPage from '../../interfaces/page';
 import logging from '../../config/logging';
 import { gsap } from 'gsap';
+import './home.css';
 
 const HomePage: React.FunctionComponent<IPage> = (props) => {
   const colorChangePrimary = React.createRef<HTMLDivElement>();
@@ -14,9 +15,13 @@ const HomePage: React.FunctionComponent<IPage> = (props) => {
   }, [props.name, { colorChangePrimary }, { colorChangeSecondary }]);
 
   return (
-    <div>
-      <h1 ref={colorChangePrimary}>Home</h1>
-      <p ref={colorChangeSecondary}>Welcome</p>
+    <div className="wrapper">
+      <h1 ref={colorChangePrimary} className="home-textElents">
+        Home
+      </h1>
+      <p ref={colorChangeSecondary} className="home-textElents">
+        Welcome
+      </p>
     </div>
   );
 };
