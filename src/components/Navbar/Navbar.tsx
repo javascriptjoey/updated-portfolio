@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { StyledLink } from './NavbarStyled';
-import './Navbar.styles.css';
-import { Squash as Hamburger } from 'hamburger-react';
+import React, { useState, useEffect } from "react";
+import { StyledLink } from "./NavbarStyled";
+import "./Navbar.styles.css";
+import { Squash as Hamburger } from "hamburger-react";
 
 const Navbar = (): JSX.Element => {
   const [isMobile, setIsMobile] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = (): JSX.Element => {
 
         <ul
           className={
-            isMobile ? 'nav-links-mobile' : ' nav-links-mobile-close nav-links'
+            isMobile ? "nav-links-mobile" : " nav-links-mobile-close nav-links"
           }
           onClick={() => setIsMobile(false)}
         >

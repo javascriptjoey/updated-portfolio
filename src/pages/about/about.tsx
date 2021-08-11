@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import IPage from '../../interfaces/page';
-import logging from '../../config/logging';
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom';
-import { gsap } from 'gsap';
-import '../about/about.css';
+import React, { useEffect, useState } from "react";
+import IPage from "../../Interfaces/page";
+import logging from "../../Config/logging";
+import { Link, RouteComponentProps, withRouter } from "react-router-dom";
+import { gsap } from "gsap";
+import "./about.css";
 
 const AboutPage: React.FunctionComponent<IPage & RouteComponentProps<any>> = (
   props
@@ -12,12 +12,12 @@ const AboutPage: React.FunctionComponent<IPage & RouteComponentProps<any>> = (
   const colorChange_02 = React.createRef<HTMLDivElement>();
   const colorChange_03 = React.createRef<HTMLDivElement>();
 
-  const [message, setMessage] = useState<string>('');
+  const [message, setMessage] = useState<string>("");
 
   useEffect(() => {
-    gsap.to(colorChange_01.current, { color: '#ff1744', duration: 2 });
-    gsap.to(colorChange_02.current, { color: '#e57373', duration: 2 });
-    gsap.to(colorChange_03.current, { color: '#e57373', duration: 2 });
+    gsap.to(colorChange_01.current, { color: "#ff1744", duration: 2 });
+    gsap.to(colorChange_02.current, { color: "#e57373", duration: 2 });
+    gsap.to(colorChange_03.current, { color: "#e57373", duration: 2 });
 
     logging.info(`Loading ${props.name}`);
     const number = props.match.params.number;

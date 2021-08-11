@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import {
   BrowserRouter,
   Route,
   Switch,
-  RouteComponentProps
-} from 'react-router-dom';
-import logging from './config/logging';
-import routes from './config/routes';
-import { Navbar } from './components/Navbar';
-import { IphoneNavbar } from './components/IphoneNavbar';
-import './application.css';
+  RouteComponentProps,
+} from "react-router-dom";
+import logging from "./Config/logging";
+import routes from "./Config/routes";
+import { Navbar } from "./Components/Navbar";
+import { IphoneNavbar } from "./Components/IphoneNavbar";
+import "./application.css";
 
 const Application: React.FunctionComponent<unknown> = (props) => {
   useEffect(() => {
-    logging.info('Loading application.');
+    logging.info("Loading application.");
   }, []);
 
   return (

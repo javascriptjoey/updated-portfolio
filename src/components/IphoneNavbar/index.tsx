@@ -1,2 +1,2 @@
-import { IphoneNavbar } from './IphoneNavbar';
+import { IphoneNavbar } from "./IphoneNavbar";
 export { IphoneNavbar };

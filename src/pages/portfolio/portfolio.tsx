@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import IPage from '../../interfaces/page';
-import logging from '../../config/logging';
+import React, { useEffect } from "react";
+import IPage from "../../Interfaces/page";
+import logging from "../../Config/logging";
 
 const PortfolioPage: React.FunctionComponent<IPage> = (props) => {
   useEffect(() => {

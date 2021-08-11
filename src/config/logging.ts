@@ -1,9 +1,9 @@
-import config from './config';
+import Config from "./config";
 
-const DEFAULT_NAMESPACE = config.defaults.namespace;
+const DEFAULT_NAMESPACE = Config.defaults.namespace;
 
 const info = (message: any, namespace?: string) => {
-  if (typeof message === 'string') {
+  if (typeof message === "string") {
     console.log(
       `[${getDate()}] [${namespace || DEFAULT_NAMESPACE}] [INFO] ${message}`
     );
@@ -16,7 +16,7 @@ const info = (message: any, namespace?: string) => {
 };
 
 const warn = (message: any, namespace?: string) => {
-  if (typeof message === 'string') {
+  if (typeof message === "string") {
     console.log(
       `[${getDate()}] [${namespace || DEFAULT_NAMESPACE}] [WARN] ${message}`
     );
@@ -29,7 +29,7 @@ const warn = (message: any, namespace?: string) => {
 };
 
 const error = (message: any, namespace?: string) => {
-  if (typeof message === 'string') {
+  if (typeof message === "string") {
     console.log(
       `[${getDate()}] [${namespace || DEFAULT_NAMESPACE}] [ERROR] ${message}`
     );
@@ -48,7 +48,7 @@ const getDate = () => {
 const logging = {
   info,
   warn,
-  error
+  error,
 };
 
 export default logging;
