@@ -1,7 +1,10 @@
 .foot {
+  display: flexbox;
+  flex-direction: row;
   background-color: orange;
   text-align: center;
   color: white;
-  padding: 1rem;
+
+  width: 100%;
   overflow: auto;
 }

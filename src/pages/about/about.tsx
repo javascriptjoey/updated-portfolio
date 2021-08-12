@@ -8,33 +8,17 @@ import "./about.css";
 const AboutPage: React.FunctionComponent<IPage & RouteComponentProps<any>> = (
   props
 ) => {
-  const colorChange_01 = React.createRef<HTMLDivElement>();
-  const colorChange_02 = React.createRef<HTMLDivElement>();
-  const colorChange_03 = React.createRef<HTMLDivElement>();
-
-  const [message, setMessage] = useState<string>("");
-
-  useEffect(() => {
-    gsap.to(colorChange_01.current, { color: "#ff1744", duration: 2 });
-    gsap.to(colorChange_02.current, { color: "#e57373", duration: 2 });
-    gsap.to(colorChange_03.current, { color: "#e57373", duration: 2 });
-
-    logging.info(`Loading ${props.name}`);
-    const number = props.match.params.number;
-
-    if (number) {
-      setMessage(`The Number is ${number}`);
-    } else {
-      setMessage(`No number provided!`);
-    }
-  }, [props, { colorChange_01 }, { colorChange_02 }, { colorChange_03 }]);
-
   return (
     <div className="content">
-      <h1 ref={colorChange_01}>About Me</h1>
-      <p ref={colorChange_02}>This page is all about me and my background</p>
-      <h2 ref={colorChange_03}>{message}</h2>
-      <Link className="colorChange" to="/">
+      <h1 className="title">About Me</h1>
+      <p>This page is all about me and my background</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+        fugit, dolorem delectus consectetur error repellendus nostrum quibusdam
+        similique quis, vero excepturi inventore! Sint totam itaque perferendis
+        accusamus consequuntur, ea praesentium?
+      </p>
+      <Link className="title" to="/">
         Go to the home page!
       </Link>
     </div>
