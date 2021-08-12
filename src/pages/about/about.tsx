@@ -30,7 +30,7 @@ const AboutPage: React.FunctionComponent<IPage & RouteComponentProps<any>> = (
   }, [props, { colorChange_01 }, { colorChange_02 }, { colorChange_03 }]);
 
   return (
-    <div>
+    <div className="content">
       <h1 ref={colorChange_01}>About Me</h1>
       <p ref={colorChange_02}>This page is all about me and my background</p>
       <h2 ref={colorChange_03}>{message}</h2>

@@ -15,12 +15,38 @@ const HomePage: React.FunctionComponent<IPage> = (props) => {
   }, [props.name, { colorChangePrimary }, { colorChangeSecondary }]);
 
   return (
-    <div className="wrapper">
-      <h1 ref={colorChangePrimary} className="home-textElents">
-        Home
-      </h1>
-      <p ref={colorChangeSecondary} className="home-textElents">
-        Welcome
+    <div className="content">
+      <h1 className="title">Home</h1>
+      <p>Welcome</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla,
+        odit deleniti quidem laborum velit iusto numquam sapiente aspernatur
+        alias perspiciatis recusandae quibusdam quia. Magni quaerat quod
+        perspiciatis eius consectetur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla,
+        odit deleniti quidem laborum velit iusto numquam sapiente aspernatur
+        alias perspiciatis recusandae quibusdam quia. Magni quaerat quod
+        perspiciatis eius consectetur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla,
+        odit deleniti quidem laborum velit iusto numquam sapiente aspernatur
+        alias perspiciatis recusandae quibusdam quia. Magni quaerat quod
+        perspiciatis eius consectetur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla,
+        odit deleniti quidem laborum velit iusto numquam sapiente aspernatur
+        alias perspiciatis recusandae quibusdam quia. Magni quaerat quod
+        perspiciatis eius consectetur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla,
+        odit deleniti quidem laborum velit iusto numquam sapiente aspernatur
+        alias perspiciatis recusandae quibusdam quia. Magni quaerat quod
+        perspiciatis eius consectetur.
       </p>
     </div>
   );

@@ -8,7 +8,7 @@ const AppsPage: React.FunctionComponent<IPage> = (props) => {
   }, [props.name]);
 
   return (
-    <div>
+    <div className="content">
       <h1>iPhone Applications</h1>
       <p> Native iOS applications go on this page</p>
     </div>

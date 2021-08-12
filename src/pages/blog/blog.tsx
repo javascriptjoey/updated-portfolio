@@ -8,7 +8,7 @@ const BlogPage: React.FunctionComponent<IPage> = (props) => {
   }, [props.name]);
 
   return (
-    <div>
+    <div className="content">
       <h1>Blog Page</h1>
       <p>Welcome to my blog</p>
     </div>

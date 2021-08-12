@@ -8,7 +8,7 @@ const ContactPage: React.FunctionComponent<IPage> = (props) => {
   }, [props.name]);
 
   return (
-    <div>
+    <div className="content">
       <h1>Contact Me</h1>
       <p>Like what you see ? contact me! </p>
     </div>

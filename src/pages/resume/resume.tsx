@@ -8,7 +8,7 @@ const ResumePage: React.FunctionComponent<IPage> = (props) => {
   }, [props.name]);
 
   return (
-    <div>
+    <div className="content">
       <h1>Resume</h1>
       <p>Down load resume option will be here</p>
     </div>
