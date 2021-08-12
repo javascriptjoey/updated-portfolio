@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: auto;
 }
 
 p {
@@ -28,9 +29,9 @@ p {
   margin: 0 0 0 0.5em;
   text-transform: uppercase;
   font-weight: 900;
-  font-style: italic;
+
   font-size: 3rem;
-  color: orange;
+  color: #006064;
   line-height: 0.8;
 }
 

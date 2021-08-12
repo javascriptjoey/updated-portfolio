@@ -9,7 +9,7 @@ const PortfolioPage: React.FunctionComponent<IPage> = (props) => {
 
   return (
     <div className="content">
-      <h1>Portfolio</h1>
+      <h1 className="title">Portfolio</h1>
       <p>Websites and Projects will be listed on this page</p>
     </div>
   );

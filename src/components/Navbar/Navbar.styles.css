@@ -9,7 +9,10 @@
   justify-content: flex-end;
   align-items: center;
   height: 55px;
+  top: 0;
+  left: 0;
   width: 100vw;
+
   animation: change-background 4s ease-in infinite alternate;
   color: white;
   border-bottom: 3px solid orange;
@@ -50,7 +53,7 @@
 
 a::after {
   border-top: 0.1em solid white;
-  content: '';
+  content: "";
   position: absolute;
   right: 100%;
   bottom: 0.14em;

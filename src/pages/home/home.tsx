@@ -15,39 +15,27 @@ const HomePage: React.FunctionComponent<IPage> = (props) => {
   }, [props.name, { colorChangePrimary }, { colorChangeSecondary }]);
 
   return (
-    <div className="content">
-      <h1 className="title">Home</h1>
-      <p>Welcome</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla,
-        odit deleniti quidem laborum velit iusto numquam sapiente aspernatur
-        alias perspiciatis recusandae quibusdam quia. Magni quaerat quod
-        perspiciatis eius consectetur.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla,
-        odit deleniti quidem laborum velit iusto numquam sapiente aspernatur
-        alias perspiciatis recusandae quibusdam quia. Magni quaerat quod
-        perspiciatis eius consectetur.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla,
-        odit deleniti quidem laborum velit iusto numquam sapiente aspernatur
-        alias perspiciatis recusandae quibusdam quia. Magni quaerat quod
-        perspiciatis eius consectetur.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla,
-        odit deleniti quidem laborum velit iusto numquam sapiente aspernatur
-        alias perspiciatis recusandae quibusdam quia. Magni quaerat quod
-        perspiciatis eius consectetur.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla,
-        odit deleniti quidem laborum velit iusto numquam sapiente aspernatur
-        alias perspiciatis recusandae quibusdam quia. Magni quaerat quod
-        perspiciatis eius consectetur.
-      </p>
+    <div className="wrapper">
+      <div>
+        <h1 className="title">Home</h1>
+        <p>Column 1</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          nulla, odit deleniti quidem laborum velit iusto numquam sapiente
+          aspernatur alias perspiciatis recusandae quibusdam quia. Magni quaerat
+          quod perspiciatis eius consectetur.
+        </p>
+      </div>
+      <div>
+        <h1 className="title">Welcome</h1>
+        <p>Column 2</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed quam,
+          eligendi dicta voluptate, dignissimos ipsa asperiores, impedit
+          doloribus illo tenetur exercitationem? Odio pariatur unde voluptatem
+          repellendus? Tenetur, totam facilis.
+        </p>
+      </div>
     </div>
   );
 };
