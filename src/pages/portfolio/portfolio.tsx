@@ -8,7 +8,7 @@ const PortfolioPage: React.FunctionComponent<IPage> = (props) => {
   }, [props.name]);
 
   return (
-    <div>
+    <div className="content">
       <h1>Portfolio</h1>
       <p>Websites and Projects will be listed on this page</p>
     </div>

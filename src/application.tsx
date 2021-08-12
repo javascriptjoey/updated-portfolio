@@ -8,16 +8,15 @@ import {
 import logging from "./Config/logging";
 import routes from "./Config/routes";
 import { Navbar } from "./Components/Navbar";
-import { IphoneNavbar } from "./Components/IphoneNavbar";
-import "./application.css";
-
+import { Footer } from "./Components/ Footer/Footer";
+import "./main.css";
 const Application: React.FunctionComponent<unknown> = (props) => {
   useEffect(() => {
     logging.info("Loading application.");
   }, []);
 
   return (
-    <div className="wrap">
+    <div>
       <BrowserRouter>
         <div>
           <Navbar />
@@ -39,6 +38,7 @@ const Application: React.FunctionComponent<unknown> = (props) => {
               );
             })}
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     </div>
