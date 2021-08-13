@@ -37,6 +37,6 @@ p {
 
 .content {
   padding: 3rem;
-  min-height: 100vh;
+  height: calc(100vh - 110px);
   overflow: auto;
 }

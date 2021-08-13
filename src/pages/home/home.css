@@ -7,6 +7,9 @@
   overflow: auto;
 }
 
+.align {
+  align-self: center;
+}
 .responsive {
   width: 100%;
   max-width: 650px;
