@@ -6,3 +6,14 @@
   height: calc(100vh - 110px);
   overflow: auto;
 }
+
+.responsive {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+
+.postionImage {
+  display: flex;
+  align-content: flex-end;
+}
