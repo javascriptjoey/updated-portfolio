@@ -9,18 +9,38 @@ const AboutPage: React.FunctionComponent<IPage & RouteComponentProps<any>> = (
   props
 ) => {
   return (
-    <div className="content">
-      <h1 className="title">About Me</h1>
-      <p>This page is all about me and my background</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-        fugit, dolorem delectus consectetur error repellendus nostrum quibusdam
-        similique quis, vero excepturi inventore! Sint totam itaque perferendis
-        accusamus consequuntur, ea praesentium?
-      </p>
-      <Link className="title" to="/">
-        Go to the home page!
-      </Link>
+    <div className="aboutwrapper">
+      <div>
+        <h1 className="title">About</h1>
+        <p>Paragraph 1</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          nulla, odit deleniti quidem laborum velit iusto numquam sapiente
+          aspernatur alias perspiciatis recusandae quibusdam quia. Magni quaerat
+          quod perspiciatis eius consectetur.
+        </p>
+        <h1 className="title">Info about me</h1>
+        <p>Paragraph 2</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed quam,
+          eligendi dicta voluptate, dignissimos ipsa asperiores, impedit
+          doloribus illo tenetur exercitationem? Odio pariatur unde voluptatem
+          repellendus? Tenetur, totam facilis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed quam,
+          eligendi dicta voluptate, dignissimos ipsa asperiores, impedit
+          doloribus illo tenetur exercitationem? Odio pariatur unde voluptatem
+          repellendus? Tenetur, totam facilis.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed quam,
+          eligendi dicta voluptate, dignissimos ipsa asperiores, impedit
+          doloribus illo tenetur exercitationem? Odio pariatur unde voluptatem
+          repellendus? Tenetur, totam facilis.
+        </p>
+      </div>
     </div>
   );
 };
