@@ -6,7 +6,7 @@ import "./home.css";
 
 const HomePage: React.FunctionComponent<IPage> = (props) => {
   const fadeInHeader1 = React.createRef<HTMLDivElement>();
-  const fadeInHeroImage = React.createRef<HTMLImageElement>();
+  const fadeInHeader2 = React.createRef<HTMLImageElement>();
   const fadeInText1 = React.createRef<HTMLDivElement>();
   const fadeInText2 = React.createRef<HTMLDivElement>();
   useEffect(() => {
@@ -16,7 +16,7 @@ const HomePage: React.FunctionComponent<IPage> = (props) => {
       duration: 1.5,
     });
 
-    gsap.from(fadeInHeroImage.current, {
+    gsap.from(fadeInHeader2.current, {
       delay: 0.3,
       opacity: 0,
       duration: 1.5,
@@ -29,7 +29,7 @@ const HomePage: React.FunctionComponent<IPage> = (props) => {
     });
 
     gsap.from(fadeInText2.current, {
-      delay: 1,
+      delay: 2,
       opacity: 0,
       duration: 1,
     });
@@ -37,23 +37,21 @@ const HomePage: React.FunctionComponent<IPage> = (props) => {
   }, [
     props.name,
     { fadeInHeader1 },
-    { fadeInHeroImage },
+    { fadeInHeader2 },
     { fadeInText1 },
     { fadeInText2 },
   ]);
 
   return (
     <div className="wrapper">
-      <div>
+      <div className="align">
         <h1 ref={fadeInHeader1} className="title ">
-          Home
+          Design
         </h1>
 
-        <p ref={fadeInText1}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          nulla, odit deleniti quidem laborum velit iusto numquam sapiente
-          aspernatur alias perspiciatis recusandae quibusdam quia. Magni quaerat
-          quod perspiciatis eius consectetur.
+        <h2 ref={fadeInText1}>Develop & Deploy</h2>
+        <p ref={fadeInText2}>
+          Software Engineer iOS & Web Developer based in Los Angeles, CA
         </p>
       </div>
       <div className="postionImage"></div>
